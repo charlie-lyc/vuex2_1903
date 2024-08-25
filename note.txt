@@ -1,0 +1,59 @@
+### Vue2 is available Node Version 10 ~ 16 !!! ###
+
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
+$ nvm install 16
+
+---
+# Install CLI
+
+$ npm install -g @vue/cli
+
+$ vue --version
+
+---
+# Create project with Vue2 in current directory
+
+$ vue create .
+
+---
+# Install Vuex2 (not 3)
+
+$ npm install vuex@2
+
+
+----------------------------------------------------------------------------
+
+What is Vuex?
+- State management & Pattern library
+- Used most commonly with the Vue framework
+- Very similar to Redux, Fux, etc(but easier)
+- Centralized store for all components
+
+Why use Vuex?
+- Components need to share state in many cases
+- Vuex provides a single source of truth for data/state
+- No need to pass events up and props down through multiple components
+- Global state is 'reactive'
+
+How it works
+
+                   Backend API
+                       |
+                       v       'Commit'
+                    [Actions] ----------
+                                        |
+  Vue Components                        v
+        ^                          [Mutations] <-----> Devtools 
+        |                               |
+        ------------- [State] ----------v
+                               'Mutate'
+
+- State : App-level state/data 
+          (todos, posts,token, etc)
+- Getters : Get pieces of state or computed values from state
+- Actions : Called from components to commit a mutation
+- Mutations : Mutae the state 
+              (update data, etc)
+- Modules : Each module can have its own state, getters, actions, and mutations 
+            (posts module, auth module, etc)
