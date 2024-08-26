@@ -1,4 +1,4 @@
-# Vuex2
+# Vuex2 on Vue2
 
 ## Project setup
 ```
