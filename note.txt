@@ -17,7 +17,7 @@ $ vue --version
 $ vue create .
 
 ---
-# Install Vuex2 (not 3)
+# Install Vuex2 (not 3 or 4)
 
 $ npm install vuex@2
 
