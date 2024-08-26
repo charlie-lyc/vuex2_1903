@@ -1,4 +1,4 @@
-### Vue2 is available Node Version 10 ~ 16 !!! ###
+### Vuex2 is available Node Version 16 !!! ###
 
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 
